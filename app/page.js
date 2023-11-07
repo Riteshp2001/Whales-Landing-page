@@ -29,7 +29,7 @@ function HamburgerToggleMenu({ isMenuOpen, toggleMenu }) {
 		<div className={styles.container}>
 			<div
 				id={styles.hamburger_icon}
-				className={`${styles.hamburger} ${isMenuOpen ? `${styles["is-active"]}` : ""}`}
+				className={isMenuOpen ? `${styles.hamburger} ${styles["is-active"]}` : styles.hamburger}
 				onClick={toggleMenu}
 			>
 				<span className={styles.line}></span>
