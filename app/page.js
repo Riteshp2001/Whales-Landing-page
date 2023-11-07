@@ -15,7 +15,7 @@ export default function Home() {
 	};
 	return (
 		<div className="overflow-hidden">
-			<HamburgerToggleMenu toggleMenu={toggleMenu} />
+			<HamburgerToggleMenu toggleMenu={toggleMenu}  isMenuOpen={isMenuOpen} />
 			<Header />
 			<Main />
 			<Footer />
