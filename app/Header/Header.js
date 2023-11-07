@@ -64,7 +64,11 @@ export default function Header() {
       <div className={styles.right_col}>
         <div
           className="whitespace-nowrap"
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+          style={{
+            transform: `translate3d(${-index * 100}%, 0, 0)`,
+            transition: "transform 0.3s ease-in-out",
+            opacity: 1,
+          }}
         >
           {notificationData.map((notification, notificationIndex) => (
             <span key={notificationIndex}>
