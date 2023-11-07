@@ -97,6 +97,7 @@ input.input_box_checked [type="checkbox"]:checked {
   .left_col,
   .right_col {
     width: 100%;
+    text-wrap:wrap;
   }
 
   .left_col_middle_text {
