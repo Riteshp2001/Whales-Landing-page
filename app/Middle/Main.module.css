@@ -1,0 +1,65 @@
+/* Default styles for larger screens */
+.header {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+  align-items: flex-end;
+  text-align: end;
+  gap: 0.5rem;
+}
+
+.left_container_middle {
+  font-size: clamp(2rem, 3rem, 3.5rem);
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+
+  .left_container_middle {
+    font-size: clamp(1rem, 2rem, 2.5rem);
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 950px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+  
+  .left_container {
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .left_container_middle {
+    font-size: 2rem;
+  }
+}
+
+/* Media query for very small screens, adjust as needed */
+@media (max-width: 590px) {
+  .left_container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  .left_container_middle {
+    font-size: 1.5rem;
+  }
+}

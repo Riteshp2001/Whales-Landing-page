@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-bg-color: #34ac00;
+  --secondary-bg-color: #5a00f5;
+  --bg-gradient: circle at left bottom, var(--primary-bg-color),
+    var(--secondary-bg-color), #000;
+}
+
+body {
+  background: radial-gradient(var(--bg-gradient));
+  -webkit-font-smoothing: antialiased;
+  width: 90vw;
+  min-height: 100vh;
+  margin: auto;
+  padding: 3rem;
+  overflow-x: hidden;
+}
+
+.items {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  gap: inherit;
+  overflow-x: scroll !important;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.items {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.items::-webkit-scrollbar {
+  display: none;
+}

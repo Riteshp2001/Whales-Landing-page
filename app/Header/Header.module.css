@@ -1,0 +1,143 @@
+/* Base styles for desktop */
+.header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.left_col {
+  color: white;
+  width: 80%;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+}
+
+.left_col_bottom_text {
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+.left_col_middle_text {
+  font-size: clamp(2rem, 3rem, 3.5rem);
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.right_col {
+  width: 40%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.right_col_container {
+  background: #fff;
+  box-shadow: 0 4px 2px #000;
+  border-radius: 15px;
+  width: 100%;
+  padding: 2rem;
+  color: #000;
+  height: 300px !important;
+  white-space: nowrap;
+  overflow-x: auto;
+  display: inline-block !important;
+  text-wrap: wrap;
+}
+
+.right_col_container_top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.right_col_container_middle {
+  font-weight: 500;
+  font-size: 1rem;
+  height: auto;
+  width: 100%;
+  text-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 4rem;
+}
+
+.right_col_container_bottom_notification_1 {
+  background-color: whitesmoke;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+
+.right_col_container_bottom_notification_common {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+input.input_box_checked [type="checkbox"]:checked {
+  background-color: blue;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1120px) {
+  /* Adjust styles for screens up to 768px wide */
+  .header {
+    flex-direction: column;
+  }
+
+  .left_col,
+  .right_col {
+    width: 100%;
+  }
+
+  .left_col_middle_text {
+    font-size: clamp(2rem, 3rem, 4rem);
+  }
+
+  .right_col {
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    margin: 2rem auto;
+  }
+
+  .right_col_container {
+    width: 100%;
+    height: auto;
+  }
+
+  .right_col_container_bottom_notification_common {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for screens up to 576px wide (small screens) */
+  .left_col {
+    padding: 1rem;
+  }
+
+  .left_col_bottom_text {
+    font-size: 1rem;
+  }
+
+  .left_col_middle_text {
+    font-size: 2rem;
+  }
+  .right_col {
+    width: 90%;
+  }
+
+  .right_col_container {
+    width: 100%;
+  }
+}
