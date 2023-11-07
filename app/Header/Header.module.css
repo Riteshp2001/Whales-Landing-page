@@ -10,7 +10,6 @@
   color: white;
   width: 80%;
   height: inherit;
-  overflow: hidden;
   position: relative;
 }
 
@@ -125,7 +124,6 @@ input.input_box_checked [type="checkbox"]:checked {
   /* Adjust styles for screens up to 576px wide (small screens) */
   .left_col {
     padding: 1rem;
-    overflow: visible;
   }
 
   .left_col_bottom_text {
