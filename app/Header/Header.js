@@ -88,9 +88,9 @@ function Notifications({ notification }) {
         <span>{notification.icon}</span>
         <span>{notification.title}</span>
       </div>
-      <div className={styles.right_col_container_middle} style={{paddingTop:"6rem"}}>
-        <div>
-          <span style={{ padding: "10px 0",fontSize:"1.2rem" }}>
+      <div className={styles.right_col_container_middle} style={{paddingTop:"5rem"}}>
+        <div style={{padding:"10px 0"}}>
+          <span style={{fontSize:"1.2rem" }}>
             {notification.middleText}
           </span>
         </div>
