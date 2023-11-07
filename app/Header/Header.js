@@ -84,38 +84,23 @@ export default function Header() {
 function Notifications({ notification }) {
   return notification.first ? (
     <div className={`${styles.right_col_container}`}>
-        <div className={styles.right_col_container_top}>
-          <span>{notification.icon}</span>
-          <span>{notification.title}</span>
+      <div className={styles.right_col_container_top}>
+        <span>{notification.icon}</span>
+        <span>{notification.title}</span>
+      </div>
+      <div className={styles.right_col_container_middle} style={{paddingTop:"6rem"}}>
+        <div>
+          <span style={{ padding: "10px 0",fontSize:"1.2rem" }}>
+            {notification.middleText}
+          </span>
         </div>
-        <div className={styles.right_col_container_middle}>
-          <div>
-            <span style={{ padding: "10px 0 0 0" }}>
-              {notification.middleText}
-            </span>
+        {notification.bottomText && (
+          <div
+            className={`${styles.right_col_container_bottom_notification_common} ${styles.right_col_container_bottom_notification_1} `}
+          >
+            {notification.bottomText}
           </div>
-          {notification.bottomText && (
-            <div
-              className={styles.right_col_container_bottom_notification_common}
-            >
-              {notification.bottomText}
-
-              <span>
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.79965 4.59953L6.17719 6.97704C6.24553 7.04538 6.35633 7.04538 6.42467 6.97704L8.80215 4.59953C8.9124 4.48928 8.83435 4.30078 8.67839 4.30078H3.9234C3.76749 4.30078 3.68941 4.48928 3.79965 4.59953Z"
-                    fill="#96979A"
-                  />
-                </svg>
-              </span>
-            </div>
-          )}
+        )}
       </div>
     </div>
   ) : (
