@@ -41,3 +41,9 @@ body {
 .items::-webkit-scrollbar {
   display: none;
 }
+
+@media (max-width: 769px) {
+  body{
+    padding: 0.8rem;
+  }
+}
