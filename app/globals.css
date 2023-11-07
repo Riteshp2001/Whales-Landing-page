@@ -16,7 +16,6 @@ body {
   min-height: 100vh;
   margin: auto;
   padding: 3rem;
-  overflow-x: hidden;
 }
 
 .items {
