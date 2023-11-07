@@ -20,7 +20,7 @@ export default function Header() {
         setIndex((prevIndex) =>
           prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
         ),
-      2500
+      5000
     );
 
     return () => {
