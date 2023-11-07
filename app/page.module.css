@@ -76,4 +76,11 @@
     background-color: #1e90ff;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   }
+
+  #hamburger_icon.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(90deg);
+  -ms-transform: translateY(-6px) rotate(90deg);
+  -o-transform: translateY(-6px) rotate(90deg);
+  transform: translateY(-6px) rotate(90deg);
+}
 }
